@@ -1,10 +1,19 @@
-package example
+package learning
 
 object Hello extends Greeting with App {
-  val numRotationsNeeded = 3
-  val arr = Array(1, 2, 3, 4, 5)
 
-  LeftRotation.rotateLeft(arr, numRotationsNeeded).map((num) => println(num))
+  val stk = new Stack[Int]
+
+  stk.push(5)
+
+  stk.push(2)
+
+  stk.push(-5)
+
+  println(stk.pop)
+
+  println(stk.pop)
+
 }
 
 trait Greeting {
