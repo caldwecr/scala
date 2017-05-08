@@ -42,6 +42,6 @@ class StackSpec extends Specification { def is = s2"""
     stack.push(123)
     stack.push(345)
 
-    stack.pop must beEqualTo(345)
+    stack.pop.get must beEqualTo(345)
   }
 }
