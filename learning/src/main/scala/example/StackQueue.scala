@@ -12,8 +12,8 @@ class Stack[A] {
   }
 
   def pop: A = {
-    val h = items.head
-    items = items.tail
+    val h = items.last
+    items = items.dropRight(1)
     h
   }
 }
